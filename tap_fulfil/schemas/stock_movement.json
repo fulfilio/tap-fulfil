@@ -1,0 +1,31 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "quantity_available": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "currency": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "company": {
+      "type": [
+        "integer"
+      ]
+    },
+    "product": {
+      "type": [
+        "integer"
+      ]
+    }
+  }
+}

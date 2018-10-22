@@ -40,6 +40,9 @@ DEFAULT_PROPERTIES = {
         "type": ["null", "string"],
         "format": "date-time",
     },
+    "create_uid": {
+        "type": ["null", "integer"],
+    },
     "rec_name": {
         "type": ["null", "string"],
     },
@@ -142,10 +145,14 @@ def sync(config, state, catalog):
 STREAM_MODEL_MAP = {
     'contacts': 'party.party',
     'sales_orders': 'sale.sale',
+    'stock_movement': 'stock.move',
+    'purchase_order': 'purchase.purchase',
 }
 MODEL_REPLICATION_METHOD = {
     'party.party': 'FULL_TABLE',
     'sale.sale': 'INCREMENTAL',
+    'stock.move': 'INCREMENTAL',
+    'purchase.purchase': 'INCREMENTAL',
 }
 
 
