@@ -41,6 +41,7 @@ New resources can be tested with `target-csv`
   "api_key": "api-key"
 }
 ```
+- Discover the resources by `tap-fulfil --discover -c config.json > catalog.json`
 - Now run `tap-fulfil --config config.json --catalog catalog.json | target-csv` to test the resources.
 
 
