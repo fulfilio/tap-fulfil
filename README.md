@@ -31,8 +31,18 @@ To add more resources, create a schema JSON file in the
 schemas folder. This should be automatically discovered by
 the script.
 
-With every addition, remember to bump the version of the
-tap.
+New resources can be tested with `target-csv`
+
+- Install target-csv using `pip install target-csv`
+- Create a config `config.json` to contain your fulfil organization and api-key
+```
+{
+  "subdomain": "demo",
+  "api_key": "api-key"
+}
+```
+- Now run `tap-fulfil --config config.json --catalog catalog.json | target-csv` to test the resources.
+
 
 ---
 
